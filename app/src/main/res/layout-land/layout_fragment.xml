@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/positions"
+        android:layout_weight="1"
+        class="com.degree.abbylaura.layoutfragments.PositionFragment"/>
+
+    <!--framelayout used when you want to block off part of the screen to display a singular type of thing -->
+    <FrameLayout
+        android:id="@+id/descriptions"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/detailsElementBackground"
+        android:layout_weight="3"
+        />
+
+</LinearLayout>
